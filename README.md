@@ -2,3 +2,5 @@
 - KOTLIN
 - MVP
 - GLIDE
+- RETROFIT
+- RX JAVA
