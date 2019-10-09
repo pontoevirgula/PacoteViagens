@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pacote de Viagens</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac nisi malesuada,
+        auctor neque sollicitudin, gravida arcu. Nulla mollis lorem sed aliquam mollis. Mauris blandit lectus ex, id
+        placerat massa faucibus sed. Nunc a velit ultrices, interdum dolor sit amet, gravida massa. Pellentesque ornare
+        pharetra quam, ut cursus magna efficitur ut. Donec eget vulputate ipsum, id venenatis ligula. Mauris
+        pellentesque, mauris quis euismod pretium, lorem eros interdum metus, consectetur eleifend massa arcu id nibh.
+    </string>
+    <string name="toolbar_title">PACOTES DE VIAGENS</string>
+    <string name="fail_load_data">Falha ao carregar dados</string>
+    <string name="touch_to_refresh">Toque para atualizar</string>
+    <string name="buy">COMPRAR</string>
+</resources>

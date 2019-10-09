@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/loading"
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".presentation.view.activity.MainActivity">
+
+        <ImageView
+                android:id="@+id/image_perfil_capa_efeito"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/grey_strong"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/includeToolbarTravelPackage" />
+
+
+        <include
+                android:id="@+id/includeScreenError"
+                layout="@layout/screen_error"
+                android:visibility="gone" />
+
+        <include
+                android:id="@+id/includeScreenLoading"
+                layout="@layout/screen_loading"
+                android:visibility="gone" />
+
+        <include
+                android:id="@+id/includeToolbarTravelPackage"
+                layout="@layout/toolbar_travel_package"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvPackagesList"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/includeToolbarTravelPackage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                tools:listitem="@layout/adapter_package_travel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+        />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

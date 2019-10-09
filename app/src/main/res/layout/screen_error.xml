@@ -1,0 +1,42 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:background="@color/color_white"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <ImageView
+            android:padding="15dp"
+            android:id="@+id/imageRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icn_refresh" />
+
+    <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/fail_load_data"
+            android:textColor="@color/colorDarkGreyBlue"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageRefresh"
+            app:layout_constraintStart_toStartOf="@+id/imageRefresh"
+            app:layout_constraintTop_toBottomOf="@+id/imageRefresh" />
+
+    <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/text_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/touch_to_refresh"
+            android:textColor="@color/colorDarkGreyBlue"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_title"
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+</android.support.constraint.ConstraintLayout>
